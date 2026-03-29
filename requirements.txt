@@ -65,6 +65,9 @@ SQLAlchemy==2.0.41
 pymysql==1.1.1
 stream-gears==0.2.2
 streamlink==7.3.0
+patchright==1.52.0
+segno==1.6.1
+opencv-python==4.11.0.86
 tomli==2.2.1
 tomli_w==1.2.0
 trio==0.30.0

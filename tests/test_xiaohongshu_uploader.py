@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import AsyncMock, patch
 
-import uploader.xiaohongshu_uploader.main as xhs_main
+import app.uploaders.xiaohongshu_uploader.main as xhs_main
 
 
 class FakeLocator:

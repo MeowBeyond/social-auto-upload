@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 
-from uploader.bilibili_uploader.runtime import (
+from app.uploaders.bilibili_uploader.runtime import (
     build_biliup_runtime_path,
     ensure_biliup_binary,
     run_biliup_command,

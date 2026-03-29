@@ -4,8 +4,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-from conf import BASE_DIR
-from utils.constant import VideoZoneTypes
+from app.core.config import BASE_DIR
+from app.utils.constant import VideoZoneTypes
 
 
 def main() -> None:

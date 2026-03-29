@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  social-auto-upload:
+    build: .
+    container_name: social-auto-upload
+    ports:
+      - "5409:5409"
+    volumes:
+      - ./cookiesFile:/app/cookiesFile
+      - ./logs:/app/logs
+    environment:
+      - TZ=Asia/Shanghai
+    restart: unless-stopped

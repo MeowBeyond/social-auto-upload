@@ -17,6 +17,8 @@ RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.li
     libxrandr2 \
     libgbm1 \
     libxkbcommon0 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
     libasound2 && rm -rf /var/lib/apt/lists/*
 
 RUN pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
@@ -28,8 +30,6 @@ RUN pip install -r requirements.txt
 RUN playwright install chromium-headless-shell
 
 COPY . .
-
-RUN cp app/core/config.example.py app/core/config.py
 
 RUN mkdir -p /app/videoFile
 RUN mkdir -p /app/cookiesFile

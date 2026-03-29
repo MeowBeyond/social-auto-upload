@@ -17,7 +17,7 @@ RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.li
     libxrandr2 \
     libgbm1 \
     libxkbcommon0 \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     libasound2 && rm -rf /var/lib/apt/lists/*
 

@@ -173,8 +173,8 @@ def postVideo():
             "data": None
         }), 500
     finally:
-        # if downloaded_files:
-        #     cleanup_downloaded_files(downloaded_files)
+        if downloaded_files:
+            cleanup_downloaded_files(downloaded_files)
 
 
 @publish_bp.route('/social/api/postVideoBatch', methods=['POST'])

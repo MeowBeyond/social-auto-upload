@@ -1,4 +1,4 @@
-FROM python:3.10.19
+FROM docker.1ms.run/python:3.10.19
 
 WORKDIR /app
 

@@ -27,7 +27,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-RUN playwright install chromium-headless-shell
+RUN playwright install chromium
 
 COPY . .
 

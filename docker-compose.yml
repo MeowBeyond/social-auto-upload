@@ -11,4 +11,5 @@ services:
       - ./logs:/app/logs
     environment:
       - TZ=Asia/Shanghai
+      - ENV=prod
     restart: unless-stopped
